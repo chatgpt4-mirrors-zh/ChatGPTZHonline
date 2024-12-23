@@ -18,7 +18,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            padding-bottom: 80px; /* 防止页脚覆盖内容 */
+            padding-bottom: 50px; /* 更新：减少底部填充以适应较小的页脚 */
         }
         header {
             background-color: #2c3e50;
@@ -45,11 +45,15 @@
         footer {
             background-color: #ecf0f1;
             text-align: center;
-            padding: 20px;
+            padding: 10px 20px; /* 更新：减少页脚内边距 */
             position: fixed;
             width: 100%;
             bottom: 0;
             box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            font-size: 14px; /* 更新：减少字体大小 */
+        }
+        footer p {
+            margin: 5px 0; /* 更新：减少段落间距 */
         }
         footer a {
             color: #3498db;
@@ -63,6 +67,13 @@
             a.button {
                 padding: 10px 20px;
                 font-size: 16px;
+            }
+            footer {
+                font-size: 12px; /* 更新：适应小屏幕的字体大小 */
+                padding: 8px 10px; /* 更新：适应小屏幕的内边距 */
+            }
+            footer p {
+                margin: 3px 0; /* 更新：适应小屏幕的段落间距 */
             }
         }
     </style>
@@ -90,18 +101,13 @@
         <section id="start">
             <h2>立即开始使用</h2>
             <p>点击下方按钮，立即体验ChatGPT中文版的强大功能：</p>
-            <!-- 如果按钮要滚动到页面内的某个部分，可以使用锚点链接。例如，假设有一个输入框的id是"chat" -->
-            <!-- <a href="#chat" class="button">开始使用ChatGPT</a> -->
-            <!-- 如果按钮要跳转到外部页面，请确保链接正确 -->
             <a href="https://www.pftedu.com/385.html" class="button">开始使用ChatGPT</a>
         </section>
         <!-- 其他内容可以在这里添加 -->
     </main>
     <footer>
-        <p>&copy; 2024 ChatGPTZHonline. 保留所有权利。</p>
-        <p>
-            联系邮箱：<a href="mailto:support@ChatGPTZHonline.com">support@ChatGPTZHonline.com</a> | 
-            网站：<a href="https://www.ChatGPTZHonline.com">https://www.pftedu.com/385.html</a>
+        <p>&copy; 2024 ChatGPTZHonline. 保留所有权利。 | 联系邮箱：<a href="mailto:support@ChatGPTZHonline.com">support@ChatGPTZHonline.com</a> | 
+            网站：<a href="https://www.pftedu.com/385.html">https://www.pftedu.com/385.html</a>
         </p>
     </footer>
 </body>
